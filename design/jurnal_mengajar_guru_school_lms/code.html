@@ -1,0 +1,744 @@
+<!DOCTYPE html><html class="light" lang="id"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Jurnal Mengajar Guru - SIAKAD SMP Pintar</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-secondary": "#ffffff",
+            "on-tertiary-fixed": "#25005a",
+            "surface-variant": "#d3e4fe",
+            "secondary-fixed": "#dbe1ff",
+            "surface-container-high": "#dce9ff",
+            "surface-container-low": "#eff4ff",
+            "primary-fixed-dim": "#b8c4ff",
+            "secondary-container": "#316bf3",
+            "on-primary-fixed": "#001453",
+            "primary-container": "#1e40af",
+            "on-error": "#ffffff",
+            "secondary": "#0051d5",
+            "secondary-fixed-dim": "#b4c5ff",
+            "surface-container-highest": "#d3e4fe",
+            "on-secondary-container": "#fefcff",
+            "background": "#f8f9ff",
+            "on-tertiary-fixed-variant": "#5a00c6",
+            "primary": "#00288e",
+            "surface": "#f8f9ff",
+            "tertiary-fixed": "#eaddff",
+            "tertiary-fixed-dim": "#d2bbff",
+            "inverse-on-surface": "#eaf1ff",
+            "on-background": "#0b1c30",
+            "on-surface": "#0b1c30",
+            "primary-fixed": "#dde1ff",
+            "on-tertiary-container": "#c9aeff",
+            "error-container": "#ffdad6",
+            "tertiary": "#440098",
+            "inverse-surface": "#213145",
+            "on-secondary-fixed-variant": "#003ea8",
+            "outline": "#757684",
+            "on-primary": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#444653",
+            "surface-container": "#e5eeff",
+            "tertiary-container": "#5f00d1",
+            "on-error-container": "#93000a",
+            "inverse-primary": "#b8c4ff",
+            "on-primary-fixed-variant": "#173bab",
+            "outline-variant": "#c4c5d5",
+            "surface-dim": "#cbdbf5",
+            "surface-tint": "#3755c3",
+            "on-primary-container": "#a8b8ff",
+            "surface-bright": "#f8f9ff",
+            "on-secondary-fixed": "#00174b",
+            "surface-container-lowest": "#ffffff",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin": "2rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "0.75rem",
+            "space-sm": "0.5rem",
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "margin-mobile": "1rem",
+            "space-lg": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-md": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "display-lg-mobile": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "title-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "title-md": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "display-lg": ["36px", { "lineHeight": "44px", "fontWeight": "700" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "title-sm": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.025em", "fontWeight": "600" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 5px;
+      height: 5px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased min-h-screen flex">
+<!-- ==================== SIDEBAR NAVIGATION (SHARED COMPONENT) ==================== -->
+<aside class="fixed top-0 left-0 h-screen w-64 flex flex-col z-30 bg-surface-container-lowest border-r border-outline-variant shadow-sm select-none">
+<div class="w-64 h-full flex flex-col justify-between p-4 overflow-y-auto custom-scrollbar">
+<!-- Brand & Teacher Profile Info -->
+<div>
+<div class="flex items-center gap-3 px-2 py-2 mb-3">
+<div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary font-headline-sm">
+<span class="material-symbols-outlined text-[22px]">school</span>
+</div>
+<div>
+<span class="text-title-md font-title-md font-bold text-primary tracking-wide block leading-tight">SIAKAD SMP</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Sistem Pintar v2.4</span>
+</div>
+</div>
+<!-- Teacher Identity Widget -->
+<div class="p-3 bg-surface-container-low rounded-xl border border-outline-variant mb-4 flex items-center gap-3">
+<img alt="Gunawan - Guru SMP" class="w-10 h-10 rounded-full object-cover border border-secondary-container" data-alt="Close-up professional portrait of Gunawan, an Indonesian middle school mathematics male teacher in his late thirties wearing an official beige civil teacher uniform with polite and dedicated facial expression, soft daylight studio lighting, clean background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6F9ahvtgvLgfw5moaifswY3aGYADh8kIUdL6NctesLMjW7eHTjT87itpcUxVTphcnr0NXEuUm-yOj6wJvT53GtP86uqd5pQPYHvTdiJQofquO34QA3OWdEB0_X6f2QrR7XZWfjTemIRJ3XUSM7kCzPWCd9amGef6N0YVNduEgPhW4oUlwPnPCZIgc1IvlSjlwgQqx_2EL0ci68wks0GFAMGFl2ApG-CvdMWTALGNx3JKjFXxJalzswA">
+<div class="overflow-hidden">
+<p class="text-title-sm font-title-sm text-primary truncate">Gunawan, S.Pd.</p>
+<p class="text-label-sm font-label-sm text-on-surface-variant truncate">Guru Matematika SMP</p>
+</div>
+</div>
+<!-- Navigation Tabs (Jurnal Mengajar is ACTIVE) -->
+<nav class="space-y-0.5">
+<!-- 1. Dashboard -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">dashboard</span>
+<span class="text-body-md font-body-md">Dashboard</span>
+</a>
+<!-- 2. Data Siswa -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span class="text-body-md font-body-md">Data Siswa</span>
+</a>
+<!-- 3. Kelas -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">school</span>
+<span class="text-body-md font-body-md">Kelas</span>
+</a>
+<!-- 4. LMS Materi -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<span class="text-body-md font-body-md">LMS Materi</span>
+</a>
+<!-- 5. Tugas -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<span class="text-body-md font-body-md">Tugas</span>
+</a>
+<!-- 6. Pengumuman -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">campaign</span>
+<span class="text-body-md font-body-md">Pengumuman</span>
+</a>
+<!-- 7. Bank Soal -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">quiz</span>
+<span class="text-body-md font-body-md">Bank Soal</span>
+</a>
+<!-- 8. CBT / Ujian -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">computer</span>
+<span class="text-body-md font-body-md">CBT / Ujian</span>
+</a>
+<!-- 9. Penilaian -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">grade</span>
+<span class="text-body-md font-body-md">Penilaian</span>
+</a>
+<!-- 10. Absensi -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+<span class="text-body-md font-body-md">Absensi</span>
+</a>
+<!-- 11. Jadwal -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+<span class="text-body-md font-body-md">Jadwal</span>
+</a>
+<!-- 12. Anti-Bentrok -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">pixel_4_4xl_4a_5_5a_5g</span>
+<span class="text-body-md font-body-md">Anti-Bentrok</span>
+</a>
+<!-- 13. Jurnal Mengajar (ACTIVE MATCH) -->
+<a class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-surface-container-low text-primary font-title-sm border-l-4 border-secondary shadow-sm" href="#">
+<span class="material-symbols-outlined text-[20px] text-secondary" style="font-variation-settings: 'FILL' 1;">edit_note</span>
+<span class="text-title-sm font-title-sm text-primary">Jurnal Mengajar</span>
+</a>
+<!-- 14. Pengaturan -->
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">settings</span>
+<span class="text-body-md font-body-md">Pengaturan</span>
+</a>
+</nav>
+</div>
+<!-- Sidebar Footer -->
+<div class="pt-4 border-t border-outline-variant space-y-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors duration-150" href="#">
+<span class="material-symbols-outlined text-[20px]">help_outline</span>
+<span class="text-body-md font-body-md">Bantuan</span>
+</a>
+<button class="w-full flex items-center justify-center gap-2 px-3 py-2 rounded-lg text-error hover:bg-error-container hover:text-on-error-container text-label-md font-label-md transition-colors">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+<span>Keluar</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- ==================== MAIN CONTENT AREA ==================== -->
+<div class="flex-1 ml-64 min-w-0 flex flex-col bg-background">
+<!-- Top Navigation Bar (Shared Component Anchor) -->
+<header class="sticky top-0 right-0 h-16 w-full z-20 bg-surface-container-lowest border-b border-outline-variant shadow-sm flex items-center justify-between px-6">
+<div class="flex items-center gap-4">
+<!-- Breadcrumb path -->
+<nav class="flex items-center gap-2 text-label-md font-label-md text-on-surface-variant">
+<span class="hover:text-primary cursor-pointer">Beranda</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary cursor-pointer">Administrasi Guru</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-title-sm">Jurnal Mengajar</span>
+</nav>
+</div>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-3">
+<!-- Search bar on left/middle -->
+<div class="relative w-64 hidden xl:block">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">search</span>
+<input class="w-full h-9 pl-9 pr-3 text-body-sm font-body-sm rounded-lg bg-surface-container-low border border-outline-variant focus:outline-none focus:border-secondary transition-all" placeholder="Cari data jurnal..." type="text">
+</div>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-colors relative" title="Jadwal Kalender">
+<span class="material-symbols-outlined text-[20px]">calendar_month</span>
+</button>
+<button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low transition-colors relative" title="Notifikasi">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+<span class="w-2 h-2 rounded-full bg-error absolute top-2 right-2"></span>
+</button>
+<div class="h-6 w-px bg-outline-variant mx-1"></div>
+<!-- User Quick Profile Pill -->
+<div class="flex items-center gap-2.5 pl-2 cursor-pointer">
+<img alt="Foto Profil Pak Gunawan" class="w-8 h-8 rounded-full object-cover border border-secondary" data-alt="Professional circular avatar of teacher Pak Gunawan with warm smile, Indonesian education background, neatly framed in blue border, high resolution portrait lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR3Bf7RbiEMWwnX4Efp6wyPqjlP_Uos5sz3q1w9nKeMhwjmuklFR0oqGLnBmS1Sukfq5biYtNJDcJ7QS11J7d-V28SoOI9nChAz-YIgQheuQOULbFuOJA-yqNSHUVQ6cp8XAhfIUZ6dXdFwSDJ765H3L5JMXswoyoSeLiOtESVyucdFoGYE560aQC7CRiO-qohGPtmVBrpstfttcCS2kyjIlAm8gzdN7kzPwIMK98eHiJrN6KeCd4UZA">
+<div class="hidden lg:block text-left">
+<span class="text-title-sm font-title-sm text-primary block leading-none">Pak Gunawan</span>
+<span class="text-label-sm font-label-sm text-outline block mt-0.5">Guru Matematika</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Page Body Container -->
+<main class="p-8 max-w-[1440px] w-full mx-auto space-y-6">
+<!-- ==================== HEADER SECTION ==================== -->
+<section class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 pb-2 border-b border-outline-variant">
+<div>
+<div class="flex items-center gap-2.5">
+<h1 class="text-headline-lg font-headline-lg text-primary tracking-tight">Jurnal Mengajar Guru</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm border border-surface-variant">TA 2024/2025 Gasal</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant mt-1 max-w-3xl">
+            Dokumentasi pelaksanaan kegiatan belajar mengajar, ketercapaian materi, presensi terintegrasi, dan catatan evaluasi kelas harian.
+          </p>
+</div>
+<!-- Header Action CTA Buttons -->
+<div class="flex flex-wrap items-center gap-2.5">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface text-label-md font-label-md hover:bg-surface-container-low transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">sync</span>
+<span>Sinkronisasi Absensi Hari Ini</span>
+</button>
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest border border-outline-variant text-on-surface text-label-md font-label-md hover:bg-surface-container-low transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">download</span>
+<span>Export Jurnal (Excel / PDF)</span>
+</button>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary-container text-on-primary text-label-md font-label-md hover:bg-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Buat Jurnal Baru</span>
+</button>
+</div>
+</section>
+<!-- ==================== KPI SUMMARY METRICS (4 CARDS) ==================== -->
+<section class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-on-surface-variant">Total Sesi Selesai</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-2">
+<span class="text-display-lg font-display-lg text-primary">42</span>
+<span class="text-body-md font-body-md text-on-surface-variant font-medium">Sesi</span>
+</div>
+<div class="flex items-center gap-1.5 mt-1 text-label-sm font-label-sm text-secondary">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>+6 sesi pekan ini (Okt 2024)</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-on-surface-variant">Rata-rata Ketercapaian TP</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">trending_up</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-1">
+<span class="text-display-lg font-display-lg text-primary">94.2%</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant truncate mt-1">
+              Kurikulum Merdeka Tercapai
+            </p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-on-surface-variant">Kehadiran Siswa Kumulatif</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-1">
+<span class="text-display-lg font-display-lg text-primary">96.1%</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant truncate mt-1">
+              Rata-rata 4 kelas matematika
+            </p>
+</div>
+</div>
+<!-- Card 4 (Action needed) -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm flex flex-col justify-between border-l-4 border-l-error">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md text-error font-semibold">Jurnal Perlu Dilengkapi</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline gap-2">
+<span class="text-display-lg font-display-lg text-error">1</span>
+<span class="text-body-md font-body-md text-error font-medium">Sesi Tertunda</span>
+</div>
+<p class="text-label-sm font-label-sm text-on-surface-variant truncate mt-1" title="Sesi Remedial Kelas VII A belum tersimpan catatan tindak lanjut">
+              Remedial Kelas VII A kemarin
+            </p>
+</div>
+</div>
+</section>
+<!-- ==================== CONTROLS & FILTER BAR ==================== -->
+<section class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm space-y-4">
+<!-- View Switcher Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-4 border-b border-outline-variant pb-3">
+<div class="flex items-center gap-2">
+<button class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg bg-surface-container text-primary font-title-sm text-label-md border border-surface-variant shadow-xs">
+<span class="material-symbols-outlined text-[18px]">view_timeline</span>
+<span>Tampilan Timeline / Daftar</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-on-surface-variant font-label-md hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[18px]">calendar_view_month</span>
+<span>Tampilan Kalender Mengajar</span>
+</button>
+<button class="flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-on-surface-variant font-label-md hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[18px]">table_chart</span>
+<span>Rekap Bulanan Administrasi</span>
+</button>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span>Menampilkan <strong>3</strong> dari 42 entri sesi</span>
+</div>
+</div>
+<!-- Granular Selectors -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Pilih Kelas</label>
+<select class="w-full h-10 px-3 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface focus:border-secondary focus:ring-0">
+<option>Semua Kelas</option>
+<option selected="">Kelas VIII A (Unggulan)</option>
+<option>Kelas VIII B</option>
+<option>Kelas VII A</option>
+<option>Kelas IX C</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Mata Pelajaran</label>
+<select class="w-full h-10 px-3 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface focus:border-secondary focus:ring-0">
+<option selected="">Matematika Wajib</option>
+<option>Ekstrakurikuler OSN Matematika</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Periode Bulan</label>
+<select class="w-full h-10 px-3 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface focus:border-secondary focus:ring-0">
+<option selected="">Oktober 2024</option>
+<option>September 2024</option>
+<option>Agustus 2024</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1">Pencarian Jurnal</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[18px] text-outline">search</span>
+<input class="w-full h-10 pl-9 pr-3 text-body-sm font-body-sm rounded-lg bg-surface-container-lowest border border-outline-variant focus:border-secondary focus:ring-0" placeholder="Cari materi, TP, kata kunci..." type="text">
+</div>
+</div>
+</div>
+</section>
+<!-- ==================== MAIN CONTENT: DUAL COLUMN LAYOUT ==================== -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- LEFT/CENTER COLUMN: RICH TIMELINE / LOG ENTRIES (8 COLS) -->
+<div class="lg:col-span-8 space-y-4">
+<!-- ENTRY 1: Hari Ini - Terisi Lengkap -->
+<article class="p-5 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm hover:border-outline transition-all space-y-4">
+<!-- Header bar of card -->
+<div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-low text-secondary border border-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                  Selesai • Sesi 1 (07:30 - 09:00 WIB)
+                </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">•</span>
+<span class="text-label-md font-label-md text-on-surface font-semibold">Senin, 14 Oktober 2024</span>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">meeting_room</span>
+<span>Ruang 204 • Kelas VIII A</span>
+</div>
+</div>
+<!-- Subject & Core Topic -->
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed">Matematika Wajib</span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Bab 3: Sistem Linear</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Sistem Persamaan Linear Dua Variabel (SPLDV) - Metode Eliminasi</h3>
+</div>
+<!-- Capaian / TP Section -->
+<div class="p-3 bg-surface-container-low rounded-lg border border-surface-variant">
+<div class="flex items-center gap-1.5 mb-1 text-label-sm font-label-sm text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>Tujuan Pembelajaran (TP 8.3.2):</span>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface">
+                "Peserta didik mampu menyelesaikan model matematika permasalahan kontekstual menggunakan eliminasi linear dua variabel secara runtut dan teliti."
+              </p>
+</div>
+<!-- Kegiatan Pembelajaran -->
+<div class="space-y-1.5">
+<span class="text-label-sm font-label-sm text-outline font-semibold uppercase tracking-wider">Aktivitas Pembelajaran Terlaksana</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed">
+                1. Apersepsi &amp; review soal cerita kantin sekolah dengan sistem paket hemat.<br>
+                2. Diskusi kelompok terarah menggunakan LKPD 03 (Menemukan nilai koefisien yang berlawanan).<br>
+                3. Presentasi 2 perwakilan kelompok dan penguatan materi oleh guru di papan tulis interaktif.
+              </p>
+</div>
+<!-- Integrated Presensi Badges -->
+<div class="p-3 bg-background rounded-lg border border-outline-variant">
+<div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-on-surface font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">fact_check</span>
+<span>Presensi Kelas Terintegrasi (32 Total Siswa)</span>
+</div>
+<span class="text-label-sm font-label-sm text-secondary font-medium">Sinkron Otomatis (07:45 WIB)</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<!-- Hadir Pill -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<strong>30</strong> Hadir
+                </span>
+<!-- Sakit Pill -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span>
+<strong>1</strong> Sakit <span class="text-outline font-normal">(Bayu Pratama)</span>
+</span>
+<!-- Izin Pill -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-surface-variant"></span>
+<strong>1</strong> Izin <span class="text-outline font-normal">(Dimas Satria)</span>
+</span>
+<!-- Alpa Pill -->
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-lowest text-on-surface border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<strong>0</strong> Alpa
+                </span>
+</div>
+</div>
+<!-- Catatan Khusus & Tindak Lanjut -->
+<div class="border-l-2 border-secondary pl-3 py-1 space-y-0.5">
+<span class="text-label-sm font-label-sm text-primary font-semibold">Refleksi &amp; Catatan Guru:</span>
+<p class="text-body-sm font-body-sm text-on-surface-variant">
+                "Siswa sangat antusias dengan simulasi harga barang. Dimas dan Bayu izin resmi, tugas modul dikirimkan via LMS Tugas. Perlu penguatan operasi perkalian tanda negatif pada 4 siswa saat menyamakan koefisien."
+              </p>
+</div>
+<!-- Tags & Actions Footer -->
+<div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-surface-container">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-label-sm font-label-sm text-on-surface-variant">Kurikulum Merdeka</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-label-sm font-label-sm text-on-surface-variant">Tatap Muka</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-label-sm font-label-sm text-on-surface-variant">LKPD Terlampir</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-label-sm font-label-sm text-on-surface-variant text-secondary">Sinkron e-Rapor</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg border border-outline-variant text-on-surface hover:bg-surface-container-low text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">print</span>
+<span>Cetak Bukti</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg border border-outline-variant text-on-surface hover:bg-surface-container-low text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+<span>Edit Jurnal</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-surface-variant text-label-sm font-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Lihat Detail</span>
+</button>
+</div>
+</div>
+</article>
+<!-- ENTRY 2: Kemarin - Jumat, 11 Oktober 2024 -->
+<article class="p-5 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm hover:border-outline transition-all space-y-3.5">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-surface-container-low text-primary border border-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                  Selesai • Sesi 3 (10:00 - 11:30 WIB)
+                </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">•</span>
+<span class="text-label-md font-label-md text-on-surface font-semibold">Jumat, 11 Oktober 2024</span>
+</div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">computer</span>
+<span>Lab Komputer 1 • Kelas VIII B</span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded text-label-sm font-label-sm bg-surface-container-high text-primary">Praktik Komputasi</span>
+</div>
+<h3 class="text-headline-sm font-headline-sm text-primary">Praktik Geometri Komputasi &amp; Geogebra</h3>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg border border-surface-variant">
+<span class="text-label-sm font-label-sm text-primary font-bold">Tujuan Pembelajaran:</span>
+<p class="text-body-sm font-body-sm text-on-surface mt-0.5">
+                Memvisualisasikan titik potong dua persamaan linear menggunakan software Geogebra secara mandiri.
+              </p>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="text-on-surface-variant">
+<strong>Kegiatan:</strong> Eksplorasi mandiri grafik SPLDV, screenshot grafik diunggah ke LMS Tugas.
+              </div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded bg-surface-container-lowest border border-outline-variant text-label-sm font-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
+<span>32 Hadir (100% Lengkap)</span>
+</div>
+</div>
+<p class="text-body-sm font-body-sm text-on-surface-variant italic">
+              "Semua siswa tuntas mengerjakan 5 soal latihan tepat waktu dan mengerti interpretasi koordinat potong."
+            </p>
+<div class="flex items-center justify-between pt-2 border-t border-surface-container">
+<span class="text-label-sm font-label-sm text-outline">Tervalidasi oleh Waka Kurikulum</span>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg border border-outline-variant text-on-surface hover:bg-surface-container-low text-label-sm font-label-sm">Edit</button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-surface-variant text-label-sm font-label-sm">Lihat Detail</button>
+</div>
+</div>
+</article>
+<!-- ENTRY 3: Perlu Review / Draf Catatan (Kemarin Lusa) -->
+<article class="p-5 bg-surface-container-lowest rounded-xl border-2 border-dashed border-error-container shadow-sm hover:border-error transition-all space-y-3.5 relative">
+<div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-error-container">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-label-sm font-label-sm bg-error-container text-error font-semibold">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+                  Draf Tindak Lanjut • Sesi 2 (09:30 - 11:00 WIB)
+                </span>
+<span class="text-label-sm font-label-sm text-on-surface-variant">•</span>
+<span class="text-label-md font-label-md text-on-surface font-semibold">Kamis, 10 Oktober 2024</span>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant">Kelas VII A (Ruang Konseling)</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Remedial Aljabar &amp; Konsultasi Tugas Siswa</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">
+                Bimbingan khusus operasi aljabar dasar untuk 15 siswa bimbingan remedial.
+              </p>
+</div>
+<div class="p-3 bg-error-container/30 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[20px]">warning</span>
+<p class="text-body-sm font-body-sm text-on-surface font-medium">
+                  Perlu menambahkan catatan hasil post-test diagnostik kelompok remedial sebelum dicetak.
+                </p>
+</div>
+<span class="text-label-sm font-label-sm text-outline">14/15 Siswa Hadir</span>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="px-4 py-1.5 rounded-lg bg-error text-on-error text-label-md font-label-md hover:bg-error/90 transition-colors shadow-xs flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">edit_square</span>
+<span>Lengkapi Jurnal Ini</span>
+</button>
+</div>
+</article>
+</div>
+<!-- RIGHT COLUMN: QUICK INPUT FORM / DRAWER PREVIEW (4 COLS) -->
+<aside class="lg:col-span-4 space-y-4">
+<div class="p-5 bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm sticky top-20">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">note_add</span>
+<h2 class="text-title-md font-title-md text-primary">Formulir Cepat Jurnal</h2>
+</div>
+<span class="text-label-sm font-label-sm px-2 py-0.5 bg-surface-container-low text-secondary rounded">Hari Ini</span>
+</div>
+<!-- Form Content -->
+<form class="space-y-3.5" onsubmit="event.preventDefault();">
+<!-- Sesi & Jadwal Mengajar Dropdown -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 font-medium">Sesi &amp; Jadwal Terintegrasi</label>
+<select class="w-full h-9 px-3 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface focus:border-secondary focus:ring-0">
+<option>Sesi Berikutnya: Sesi 4 (13:00 - 14:20 WIB) - Kelas VIII A</option>
+<option>Tambahan Sore: Bimbingan OSN (15:00 - 16:30 WIB)</option>
+<option>Sesi Khusus Mandiri</option>
+</select>
+</div>
+<!-- Materi Pokok & Kode TP -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 font-medium">Materi Pokok &amp; Kode TP</label>
+<input class="w-full h-9 px-3 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface focus:border-secondary focus:ring-0" type="text" value="SPLDV - Metode Substitusi &amp; Campuran">
+<span class="text-label-sm font-label-sm text-outline mt-0.5 block">Saran TP: 8.3.3 Menyelesaikan SPLDV substitusi</span>
+</div>
+<!-- Alokasi Jam Pelajaran -->
+<div class="grid grid-cols-2 gap-2">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 font-medium">Alokasi Waktu</label>
+<input class="w-full h-9 px-3 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface" type="text" value="2 JP (80 Menit)">
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 font-medium">Model Belajar</label>
+<select class="w-full h-9 px-2.5 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface">
+<option>Problem-Based</option>
+<option>Project-Based</option>
+<option>Direct Instruction</option>
+</select>
+</div>
+</div>
+<!-- Ringkasan Kegiatan Pembelajaran -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 font-medium">Ringkasan Kegiatan Pembelajaran</label>
+<textarea class="w-full p-2.5 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface focus:border-secondary focus:ring-0" placeholder="Jelaskan pembuka, inti pembelajaran, dan refleksi penutup..." rows="3"></textarea>
+</div>
+<!-- Status Presensi Real-Time Widget -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 font-medium">Status Presensi Siswa</label>
+<div class="p-2.5 bg-surface-container-low rounded-lg border border-surface-variant flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-1.5 text-secondary font-medium">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Presensi Tersinkron</span>
+</div>
+<span class="text-label-sm font-label-sm bg-surface-container-lowest px-2 py-0.5 rounded border border-outline-variant">32/32 Siap</span>
+</div>
+</div>
+<!-- Refleksi / Kejadian Khusus di Kelas -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 font-medium">Refleksi &amp; Hambatan Belajar</label>
+<textarea class="w-full p-2.5 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface focus:border-secondary focus:ring-0" placeholder="Catatan siswa berprestasi, kendala sarana, atau murid butuh perhatian..." rows="2"></textarea>
+</div>
+<!-- Tautan Bukti Kegiatan -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant mb-1 font-medium">Bukti Fisik / Dokumentasi</label>
+<div class="flex items-center gap-2">
+<input class="w-full h-9 px-3 bg-surface-container-lowest border border-outline-variant rounded-lg text-body-sm font-body-sm text-on-surface focus:border-secondary focus:ring-0" placeholder="https://drive.google.com/..." type="text">
+<button class="w-9 h-9 rounded-lg border border-outline-variant flex items-center justify-center text-outline hover:bg-surface-container-low flex-shrink-0" title="Upload Berkas" type="button">
+<span class="material-symbols-outlined text-[18px]">attach_file</span>
+</button>
+</div>
+</div>
+<!-- Buttons Container -->
+<div class="pt-3 border-t border-outline-variant space-y-2">
+<button class="w-full py-2.5 rounded-lg bg-primary-container text-on-primary font-title-sm text-label-md hover:bg-primary transition-colors shadow-sm flex items-center justify-center gap-1.5" type="submit">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span>Finalisasi &amp; Kirim ke Kurikulum</span>
+</button>
+<button class="w-full py-2 rounded-lg border border-outline-variant text-on-surface font-label-md hover:bg-surface-container-low transition-colors" type="button">
+                  Simpan sebagai Draf
+                </button>
+</div>
+</form>
+</div>
+</aside>
+</div>
+</main>
+<!-- ==================== FOOTER / STATUS BAR ==================== -->
+<footer class="mt-auto border-t border-outline-variant bg-surface-container-lowest px-8 py-3.5 flex flex-col sm:flex-row items-center justify-between text-body-sm font-body-sm text-on-surface-variant gap-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Tersimpan otomatis di cloud database Supabase • Terakhir sinkronisasi pukul <strong>09:15 WIB</strong></span>
+</div>
+<div class="flex items-center gap-4 text-label-sm font-label-sm">
+<span>SIAKAD SMP Pintar © 2024</span>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary" href="#">Kebijakan Privasi Data Guru</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary" href="#">Panduan Kurikulum Merdeka</a>
+</div>
+</footer>
+</div>
+</body></html>
